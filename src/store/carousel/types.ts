@@ -8,3 +8,5 @@ export interface ICarousel {
     currentId: number;
     items: Array<ICarouselItem>;
 }
+
+export type CarouselType = '2D' | '3D';

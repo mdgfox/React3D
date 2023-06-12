@@ -27,12 +27,12 @@ const CarouselItem: FC<Props> = ({item}) => {
             </button>
             <div 
                 className={cn(
-                    "mx-auto mt-5 bg-red-aqua h-1 rounded transition-all duration-500 ease-in-out",
+                    "mx-auto mt-2 bg-dark-blue h-1 rounded transition-all duration-500 ease-in-out",
                     isActive ? 'w-1/2' : 'w-0'
                 )}
             />
         </div>
-       
+    
         
     );
 }
