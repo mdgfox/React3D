@@ -5,6 +5,18 @@
 @tailwind utilities;
 
 body {
-  @apply text-white bg-[#09131B];
   font-family: 'Kablammo', sans-serif;
 }
+
+/* [data-theme="dark"] {
+  body {
+    @apply bg-[#09131B];
+  }
+}
+
+[data-theme="light"] {
+  body {
+    @apply bg-[#EFFAFD];
+  }
+  
+} */

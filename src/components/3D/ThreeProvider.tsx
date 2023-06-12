@@ -1,3 +1,4 @@
+"use client"
 import { Canvas } from "@react-three/fiber";
 import { FC, PropsWithChildren, Suspense } from "react";
 

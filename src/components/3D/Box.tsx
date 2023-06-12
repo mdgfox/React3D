@@ -1,3 +1,4 @@
+"use client"
 import useActions from "@/hooks/useActions";
 import { useCarousel } from "@/hooks/useCarousel";
 import { ICarouselItem } from "@/store/carousel/types";

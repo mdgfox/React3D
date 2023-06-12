@@ -1,3 +1,4 @@
+"use client"
 import { useCarousel } from "@/hooks/useCarousel"
 import { FC, useMemo } from "react";
 import Navigation from "./Navigation";
