@@ -1,5 +1,4 @@
 "use client"
-
 import { FC } from "react"
 import { ICarouselItem } from "@/store/carousel/types"
 import Image from 'next/image'
@@ -27,7 +26,7 @@ const CarouselItem: FC<Props> = ({item}) => {
             </button>
             <div 
                 className={cn(
-                    "mx-auto mt-2 bg-dark-blue h-1 rounded transition-all duration-500 ease-in-out",
+                    "mx-auto mt-2 bg-light-slider dark:bg-dark-slider h-1 rounded transition-all duration-500 ease-in-out",
                     isActive ? 'w-1/2' : 'w-0'
                 )}
             />

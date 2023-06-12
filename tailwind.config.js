@@ -8,16 +8,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark-blue': '#1D63FF',
-        'dark-red': '#FE3A4A',
-        'dark-gold': '#FEC501',
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'dark-gold': '#FEC501', // main text color
+
+        'dark': '#011A27', // background
+        'dark-slider': '#F0810F', // slider
+        'dark-button': '#E6DF44', // buttons
+        
+        'light': '#F1F3CE', // background
+        'light-slider': '#1E656D', // slider
+        'light-button': '#F62A00', // buttons
       },
     },
   },
   plugins: [],
+  darkMode: 'class',
 }
