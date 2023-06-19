@@ -15,9 +15,7 @@ const Carousel3DItem: FC<Props> = ({item}) => {
     const isActive = currentId === item.id;
 
     return (
-        <div className={
-            cn(isActive ? 'w-1/3 h-96' : 'w-1/5 h-60')
-        }>
+        <div className={cn(isActive ? 'w-1/3 h-96' : 'w-1/5 h-60')}>
             <ThreeProvider>
                 <Box position={[0, 0, 0]} item={item}/>
             </ThreeProvider>
