@@ -2,6 +2,7 @@
 import { FC } from "react";
 import Carousel from "./Carousel";
 import ThemeSwitcher from "./ThemeSwitcher";
+import { PortalCarousel } from "./3D/portals/PortalCarousel";
 
 const Home: FC = () => {
     return (
@@ -12,6 +13,8 @@ const Home: FC = () => {
 
             <Carousel type={'3D'}/>
             <Carousel type={'2D'}/>
+            
+            <PortalCarousel />
         </div>
     )
 }
