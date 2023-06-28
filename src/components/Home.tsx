@@ -3,6 +3,7 @@ import { FC } from "react";
 import Carousel from "./Carousel";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { PortalCarousel } from "./3D/portals/PortalCarousel";
+import HtmlGallery from "./HtmlGallery";
 
 const Home: FC = () => {
     return (
@@ -15,6 +16,8 @@ const Home: FC = () => {
             <Carousel type={'2D'}/>
             
             <PortalCarousel />
+
+            <HtmlGallery />
         </div>
     )
 }
