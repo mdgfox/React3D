@@ -7,7 +7,10 @@ const HtmlGallery: FC = () => {
     const images = useMemo(() => {
         return items.map(item => {
             return (
-                <article className="relative left-0 max-w-[80px] hover:max-w-none rounded-2xl h-96 overflow-hidden shadow-md flex-[0.25] transition ease-in-out duration-500 hover:flex-[2] hover:font-bold hover:cursor-pointer hover:rounded-xl">
+                <article 
+                    className="relative left-0 max-w-[80px] hover:max-w-none rounded-2xl h-96 overflow-hidden shadow-md flex-[0.25] transition ease-in-out duration-500 hover:flex-[2] hover:font-bold hover:cursor-pointer hover:rounded-xl"
+                    key={`htmlGallery-${item.id.toString()}`}
+                >
                     <figure>
                         <img
                             className="h-96"
