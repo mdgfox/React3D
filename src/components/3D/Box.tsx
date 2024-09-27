@@ -7,7 +7,6 @@ import { ThreeElements, useFrame } from "@react-three/fiber"
 import { FC, useRef, useState } from 'react'
 import * as THREE from 'three';
 
-
 type TypeBox = {
     item: ICarouselItem;
 } & ThreeElements['mesh'];
@@ -40,7 +39,7 @@ const Box: FC<TypeBox> = ({item, ...rest}) => {
             onPointerMove={({clientX, clientY}) => setMousePos({x: clientX, y: clientY})}
             onPointerLeave={() => setMousePos({x: 0, y: 0})}
         >
-            <boxBufferGeometry args={[1.5, 1, 1.5]} />
+            <boxGeometry args={[1.5, 1, 1.5]} />
             <meshBasicMaterial key={image.id} map={image} shadowSide={THREE.BackSide}/>
         </mesh>
     );
